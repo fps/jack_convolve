@@ -1,0 +1,46 @@
+
+    Copyright (C) 2004 Florian Schmidt
+    
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation; either version 2.1 of the License, or
+    (at your option) any later version.
+    
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+    
+    You should have received a copy of the GNU Lesser General Public License
+    along with this program; if not, write to the Free Software 
+    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ 
+
+requirements:
+
+fftw3
+
+libsndfile
+
+libsamplerate (a.k.a. SRC)
+
+and now libDSP 5.0.1
+
+compile with 
+
+make
+
+and run with
+
+./jack_convolve responsefile.wav
+
+then conncect the in and out's to your liking
+
+on my 1.2ghz athlon i can use a 1 sec response file at 30% cpu load. Make sure your
+jack buffer size isn't too small, otherwise the cpu load goes up.. 
+
+PowerPC users (or if you have some other reason that you can't use libDSP):
+
+edit the makefile and remove the -ldsp from the LINK_FLAGS.
+
+flo
