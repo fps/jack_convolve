@@ -16,6 +16,8 @@
     Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  
 
+NOTICE: This repository is only here for archiving purposes. I would recommend to look at other software for your convolution needs. For example Fons Adriaensen's jconvolve: https://kokkinizita.linuxaudio.org/linuxaudio/downloads/index.html
+
 requirements:
 
 fftw3
